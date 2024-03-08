@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Raycast_Gun : MonoBehaviour
 {
@@ -12,12 +13,15 @@ public class Raycast_Gun : MonoBehaviour
     public ParticleSystem muzzleFlash;
     
     public TMP_Text ammoText;
+    public TMP_Text scoreText;
+    public int score;
 
     private float nextFire;
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreText.text = "Score: " + score;
         currentAmmo = magSize;
     }
 
@@ -51,6 +55,7 @@ public class Raycast_Gun : MonoBehaviour
             Enemy_Target target = hit.transform.GetComponent<Enemy_Target>();
             if(target != null){
                 target.TakeDamage(gunDamage);
+                AddScore();
             }
             if(hit.rigidbody != null){
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
@@ -71,6 +76,14 @@ public class Raycast_Gun : MonoBehaviour
         else{
             currentAmmo = reserveAmmo;
             reserveAmmo = 0;
+        }
+    }
+
+    void AddScore(){
+        score++;
+        scoreText.text = "Score: " + score;
+        if(score >=20){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

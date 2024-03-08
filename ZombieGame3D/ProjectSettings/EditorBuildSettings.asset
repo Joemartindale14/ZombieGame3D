@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/EnemyExample.unity
     guid: 99ce34e920a94f2498e80d9bde115235
+  - enabled: 1
+    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/Level2.unity
+    guid: a34d37650a860a245b40720dac79eb3e
+  - enabled: 1
+    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/GameComplete.unity
+    guid: e042906a3ddaad0489efa3fc50510797
   m_configObjects: {}
