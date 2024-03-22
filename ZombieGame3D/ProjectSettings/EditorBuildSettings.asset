@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/MainMenu.unity
     guid: 9d5fbeeded86aa9429a44d6ae56f7ed4
   - enabled: 1
-    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/EnemyExample.unity
+    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/LevelOne.unity
+    guid: a34d37650a860a245b40720dac79eb3e
+  - enabled: 1
+    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/LevelTwo.unity
     guid: 99ce34e920a94f2498e80d9bde115235
   - enabled: 1
-    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/Level2.unity
-    guid: a34d37650a860a245b40720dac79eb3e
+    path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/LevelThree.unity
+    guid: 8932c3b392821a84da8992e7414db95b
   - enabled: 1
     path: Assets/FPS-Package/FPS-Teaching-main/FPS-Teaching/Assets/Scenes/GameComplete.unity
     guid: e042906a3ddaad0489efa3fc50510797
